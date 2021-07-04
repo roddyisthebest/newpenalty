@@ -35,7 +35,7 @@ fetch('./convert.json')
     });
     tdList.map((index,data)=>{
         const list = document.querySelectorAll(".sexyone")
-        createEl("span",'innerHTML',`${index}`,['name'],list[data]);
+        createEl("span",'innerHTML',`${index}&#x20a9;`,['name'],list[data]);
 
     })
 
