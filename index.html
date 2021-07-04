@@ -33,39 +33,20 @@
             margin:10px;
             text-align:center;
         }
+        .sexygrid{
+            display:grid;
+            grid-template-columns: repeat(auto-fill,100px);
+            grid-gap:25px;
+            width:100%;
+        }
     </style>
 </head>
 <body>
     <div class= "container">
         <h1 class="title">Penalty</h1>
-        <table style="width:100%;">
-            <tr>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-                <th class="th">Name</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-                <td class="td">fine</td>
-    
-              </tr>
-            </tbody>
-        </table>
+        <div class="sexygrid"></div>
     </div>
+    <script src="./convert.json" type="text/javascript"></script>
+    <script src="./magic.js"> </script>
 </body>
 </html>
