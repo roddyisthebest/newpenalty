@@ -18,7 +18,9 @@ function createEl(tagType,property,value,classNames,where){
     where.appendChild(e);
     return e;
 }
-const sexygrid = document.querySelector(".sexygrid")
+const table = document.querySelector("table")
+const thead =document.querySelector(".info");
+const tbody = document.querySelector(".active");
 fetch('./convert.json')
   .then(response => response.json())
   .then(async(data) => {
@@ -26,16 +28,32 @@ fetch('./convert.json')
           thList.push(key);
           tdList.push(data.fee[key]);
         }})
+    
   .catch(error => console.log(error));
   
+  console.log(thList,tdList);
   setTimeout(() => {
     thList.map((index,data)=>{
-        const one = createEl('div',' ',` `,["sexyone"],sexygrid);
-        createEl("span",'innerHTML',`${index}`,['name'],one);
+        const th = createEl('th',' ',` `,['thone'],thead);
+        createEl("p",'innerHTML',`${index}`,[],th);
     });
     tdList.map((index,data)=>{
-        const list = document.querySelectorAll(".sexyone")
-        createEl("span",'innerHTML',`${index}&#x20a9;`,['name'],list[data]);
+        if(parseInt(index)==0){
+            const td = createEl('td',' ',` `,['success'],tbody);
+            createEl("p",'innerHTML',`${index}`,[],td);    
+        }
+        else if(parseInt(index)<=1000 &&parseInt(index)>0){
+            const td = createEl('td',' ',` `,['warning'],tbody);
+            createEl("p",'innerHTML',`${index}`,[],td); 
+        }
+        else if(parseInt(index)>=1000){
+            const td = createEl('td',' ',` `,['danger'],tbody);
+            createEl("p",'innerHTML',`${index}`,[],td); 
+        }
+        else{
+            const td = createEl('td',' ',` `,['danger'],tbody);
+            createEl("p",'innerHTML',`${index}`,[],td); 
+        }
 
     })
 
