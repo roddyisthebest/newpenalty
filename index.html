@@ -11,24 +11,19 @@
         body{
             font-family: 'Nanum Myeongjo', serif;
             font-weight: 1000;
-            background-image: url("./img/jannes-glas-cuhQcfp3By4-unsplash.jpg");
-            background-size: 100% 100%;
-            background-repeat: none;
-            background-position: left top;
+            background-color: RGB(0, 30, 55);
 
         }
         .container{
             display:flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             width:100%;
-            height:100vh;
         }
         .title{
             font-size:50px;
             font-weight:600;
-            margin-bottom:100px;
+            margin:100px 0;
             color:white;
         }
    
@@ -37,6 +32,10 @@
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             font-size:1.1vw;
             color:rgb(255, 255, 255);
+        }
+
+        .thsexy{
+            background-color: white;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,18 +49,27 @@ crossorigin="anonymous"
 <body>
     <div class= "container">
         <h1 class="title">"Penalty"</h1>
-        <div class="table-responsive">
+        <div class="table-responsive" >
 
-        <table class="table table-condensed table-bordered table-hover table-striped">
+        <table class="table table-condensed table-bordered  table-striped table-dark" >
             <thead>
                 <tr class="info"></tr>
             </thead>
             <tbody>
-                <tr class="active"></tr>
+                <tr id ="one"class="active"></tr>
             </tbody>
           </table>
+
         </div>
+        <h1 class="title">"Pray List"</h1>
+        <div class="prayer" style="display: block;">
+            
+        </div>
+        
+          
+          
     </div>
+    
     <script src="./convert.json" type="text/javascript"></script>
     <script src="./magic.js"> </script>
 </body>
