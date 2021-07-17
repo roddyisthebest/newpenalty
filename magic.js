@@ -49,7 +49,7 @@ const prayer = document.querySelector(".prayer");
   function loadJSON2(callback) {   
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', `Json/convert.json`, true);
+    xobj.open('GET', `Json/penalty.json`, true);
     xobj.onreadystatechange = function () {
       if (xobj.readyState == 4 && xobj.status == "200") {
         callback(JSON.parse(xobj.responseText));
