@@ -59,6 +59,7 @@ loadJSON2(function (json) {
   varPk();
 });
 
+const date = document.querySelector("#date");
 const varPk = (e) => {
   console.log(penaltyList);
   penaltyList.map((e) => {
@@ -87,10 +88,5 @@ const varPray = () => {
     });
   });
 };
-
-const dateTag = document.querySelector("#date");
-var date = new Date();
-console.log(date);
-dateTag.innerHTML = `${date}`;
 
 /*data.fee[key]*/
