@@ -71,6 +71,7 @@ const varPk = (e) => {
 };
 
 const varPray = () => {
+  console.log(prayList);
   prayList.map((e) => {
     const ul = createEl("ul", " ", "", ["list-group"], prayer);
     createEl(
@@ -81,7 +82,6 @@ const varPray = () => {
       ul
     );
     Object.entries(e[1][1]).map((e, idx) => {
-      console.log(idx);
       if (idx != 0 && e[1] != "Nan") {
         createEl("li", "innerHTML", `${e[1]}`, ["list-group-item"], ul);
       }
