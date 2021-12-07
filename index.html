@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
 
     <title>Document</title>
     <style>
-        body{
-            font-family: 'Nanum Myeongjo', serif;
-            font-weight: 1000;
-            background-color: RGB(0, 30, 55);
+      body {
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 1000;
+        background-color: RGB(0, 30, 55);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .title {
+        font-size: 50px;
+        font-weight: 600;
+        margin: 100px 0;
+        color: white;
+      }
 
-        }
-        .container{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            width:100%;
-        }
-        .title{
-            font-size:50px;
-            font-weight:600;
-            margin:100px 0;
-            color:white;
-        }
-   
-       
-        .name{
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            font-size:1.1vw;
-            color:rgb(255, 255, 255);
-        }
+      .name {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.1vw;
+        color: rgb(255, 255, 255);
+      }
 
-        .thsexy{
-            background-color: white;
-        }
-        #date{
-            font-size:20px;
-            color:white;
-        }
+      .thsexy {
+        background-color: white;
+      }
+      #date {
+        font-size: 20px;
+        color: white;
+      }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script
-src="https://kit.fontawesome.com/bb830b2dcb.js"
-crossorigin="anonymous"
-></script>
-</head>
-<body>
-    <div class= "container">
-        <h1 class="title">"Penalty"</h1>
-        <div class="table-responsive" >
-        
-        <table class="table table-condensed table-bordered  table-striped table-dark" >
-            <thead>
-                <tr class="info"></tr>
-            </thead>
-            <tbody>
-                <tr id ="one"class="active"></tr>
-            </tbody>
-          </table>
-          <span id="date" />
-        </div>
-        <h1 class="title">"Pray List"</h1>
-        <div class="prayer" style="display: block;">
-            
-        </div>
-          
-          
+      src="https://kit.fontawesome.com/bb830b2dcb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">"Penalty"</h1>
+      <div class="table-responsive">
+        <div>hello</div>
+        <table
+          class="table table-condensed table-bordered table-striped table-dark"
+        >
+          <thead>
+            <tr class="info"></tr>
+          </thead>
+          <tbody>
+            <tr id="one" class="active"></tr>
+          </tbody>
+        </table>
+        <span id="date" />
+      </div>
+      <h1 class="title">"Pray List"</h1>
+      <div class="prayer" style="display: block"></div>
     </div>
-    
-    
+
     <script src="./convert.json" type="text/javascript"></script>
-    <script src="./magic.js"> </script>
-</body>
+    <script src="./magic.js"></script>
+  </body>
 </html>
